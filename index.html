@@ -27,14 +27,14 @@
             transform: translateX(-50%);
             display: flex;
             gap: 10px;
-            z-index: 10; /* Ensure controls are above other content */
+            z-index: 10;
         }
 
         .music-button {
             border: none;
             background: none;
             cursor: pointer;
-            width: 30px; /* Adjust size as needed */
+            width: 30px;
             height: 30px;
             animation: fadeIn 1s ease-out;
         }
@@ -99,7 +99,7 @@
         }
 
         .social-link img {
-            width: 24px; /* Adjust size as needed */
+            width: 24px;
             height: 24px;
         }
 
@@ -108,7 +108,6 @@
             transform: scale(1.05);
         }
 
-        /* About Me Section */
         .about-me {
             display: none;
             margin-top: 20px;
@@ -207,11 +206,11 @@
         <div class="profile-section">
             <img src="img/your-profile-picture.jpg" alt="Profile Picture" class="profile-picture">
             <h1 class="username">Muhammad Irsyad</h1>
-            <p class="bio">I'm Sad.</p>
+            <p class="bio">I'm Irsad.</p>
         </div>
         <div class="links-section">
             <a href="https://instagram.com/irsyad.kgr" class="social-link">
-                <img src="img/Instagram.png" alt="Instagram Logo">
+                <img src="img/instagram.png" alt="Instagram Logo">
                 Instagram
             </a>
             <a href="https://steamcommunity.com/id/muhirsyad12" class="social-link">
@@ -227,7 +226,7 @@
             </div>
         </div>
         <div class="about-me" id="aboutMeSection">
-            <p>Hi, Thanks for seeing me, i just want to be happy.</p>
+            <p>Hi, Thanks for seeing me.</p>
             <p>I enjoy gaming especially on PC, and I'm always trying to do better.</p>
         </div>
     </div>
@@ -259,11 +258,9 @@
             });
         }
 
-        // Start audio playback when user interacts with the page
         window.addEventListener('click', playAudio);
         window.addEventListener('keydown', playAudio);
 
-        // Toggle About Me section
         function toggleAboutMe() {
             var aboutMeSection = document.getElementById("aboutMeSection");
             if (aboutMeSection.style.display === "none" || aboutMeSection.style.display === "") {
